@@ -215,7 +215,7 @@ class Sasa_Pay_Admin {
             <hr />
 
             <h3>SasaPay API Settings</h3>
-            <h5>Visit or contact <a href="https://developer.sasapay.app/" style="text-decoration: none">SasaPay Developer Portal</a> to provide these credentials</h5>
+            <h5>Visit or contact <a href="https://developers.sasapay.app/" style="text-decoration: none">SasaPay Developer Portal</a> to provide these credentials</h5>
             <table cellspacing="2">
                 <tr>
                     <td><?php _e("Merchant Name:", 'menu-test' ); ?></td>
@@ -261,7 +261,7 @@ class Sasa_Pay_Admin {
             <hr />
 
             <h3>SasaPay Credentials</h3>
-            <h5>Go to <a style="text-decoration:none" href="https://developer.sasapay.app/?#/dashboard/aplications-management/apps"> SasaPay Developer portal</a> to get these credentials.</h5>
+            <h5>Go to <a style="text-decoration:none" href="https://developers.sasapay.me/dashboard/applications"> SasaPay Developer portal</a> to get these credentials.</h5>
             <table cellspacing="2">
                 <tr>
                     <td><?php _e("Application URL:", 'menu-test' ); ?></td>

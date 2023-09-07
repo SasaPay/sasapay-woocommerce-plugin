@@ -16,7 +16,7 @@ class C2B extends SasaPay
             'ConfirmationURL' => get_option('callback_url'),
 //            'ValidationURL' => get_option('validation_url')
         ];
-        return $this->request('payments/register-confirmation-url/', $this->transaction);
+        return $this->request('payments/register-ipn-url/', $this->transaction);
     }
 
     /**
