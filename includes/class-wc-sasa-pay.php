@@ -212,10 +212,19 @@ class WC_SasaPay extends WC_Payment_Gateway
             );
             if ($res['status']) {
                 $_SESSION['checkout_request_id']=$res['CheckoutRequestID'];
-                return [
-                    'result'   => 'success',
-                    'redirect' => $order->get_checkout_payment_url( true )
-                ];
+                $payment_gateway=$res['PaymentGateway'];
+                if ($payment_gateway=='SasaPay'){
+                    return [
+                        'result'   => 'success',
+                        'redirect' => $order->get_checkout_payment_url( true )
+                    ];
+                }else{
+                    $redirect_url = $this->get_return_url( $order );
+                    return [
+                        'result'   => 'success',
+                        'redirect' => $redirect_url
+                    ];
+                }
             } else {
                 wc_add_notice(__($res['message'], 'woocommerce'), 'error');
                 return [
