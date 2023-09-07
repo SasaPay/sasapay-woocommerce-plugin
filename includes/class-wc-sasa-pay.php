@@ -212,8 +212,8 @@ class WC_SasaPay extends WC_Payment_Gateway
             );
             if ($res['status']) {
                 $_SESSION['checkout_request_id']=$res['CheckoutRequestID'];
-                $payment_gateway=$res['PaymentGateway'];
-                if ($payment_gateway=='SasaPay'){
+                $_SESSION['payment_gateway']=$res['PaymentGateway'];
+                if ($res['PaymentGateway']=='SasaPay'){
                     return [
                         'result'   => 'success',
                         'redirect' => $order->get_checkout_payment_url( true )
