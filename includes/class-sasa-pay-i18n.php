@@ -7,7 +7,7 @@
  * so that it is ready for translation.
  *
  * @link       https://sasapay.co.ke
- * @since      1.0.0
+ * @since      1.0.1
  *
  * @package    Sasa_Pay
  * @subpackage Sasa_Pay/includes
@@ -19,7 +19,7 @@
  * Loads and defines the internationalization files for this plugin
  * so that it is ready for translation.
  *
- * @since      1.0.0
+ * @since      1.0.1
  * @package    Sasa_Pay
  * @subpackage Sasa_Pay/includes
  * @author     SasaPay <care@sasapay.co.ke>
@@ -30,7 +30,7 @@ class Sasa_Pay_i18n {
 	/**
 	 * Load the plugin text domain for translation.
 	 *
-	 * @since    1.0.0
+	 * @since    1.0.1
 	 */
 	public function load_plugin_textdomain() {
 

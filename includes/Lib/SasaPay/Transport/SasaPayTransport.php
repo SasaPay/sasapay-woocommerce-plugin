@@ -51,10 +51,11 @@ class SasaPayTransport
     public function request($endpoint, array $data = [], string $method = 'post'):array
     {
         try{
+            $token = $this->getAccessToken();
             $url = $this->getUrl($endpoint);
             $header=[
                 'Content-Type:application/json',
-                'Authorization:Bearer '.$this->token
+                'Authorization:Bearer '.$token
             ];
 
             $curl = curl_init();
